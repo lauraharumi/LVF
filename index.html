@@ -3,101 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LVF - Strategic Property Solutions</title>
-    <!-- Tailwind CSS CDN for quick styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #F8F8F8; /* Off-white background */
-            color: #001F3F; /* Deep Navy text */
-        }
-        .text-navy {
-            color: #001F3F; /* Deep Navy */
-        }
-        .bg-navy {
-            background-color: #001F3F; /* Deep Navy */
-        }
-        .border-silver {
-            border-color: #D3D3D3; /* Sterling Silver */
-        }
-        .text-silver {
-            color: #C0C0C0; /* Sterling Silver */
-        }
-        .hover-silver-effect:hover {
-            box-shadow: 0 4px 10px rgba(192, 192, 192, 0.4); /* Subtle silver shadow on hover */
-            transform: translateY(-2px); /* Slight lift */
-        }
-        .container-padding {
-            padding-left: 1rem; /* Default padding for small screens */
-            padding-right: 1rem;
-        }
-        @media (min-width: 640px) { /* Small screens and up */
-            .container-padding {
-                padding-left: 2rem;
-                padding-right: 2rem;
-            }
-        }
-        @media (min-width: 1024px) { /* Large screens and up */
-            .container-padding {
-                padding-left: 4rem;
-                padding-right: 4rem;
-            }
-        }
-    </style>
+    <title>LVF - Curated Partnerships. Unrivaled Dedication.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-3xl w-full space-y-8 bg-white p-8 sm:p-10 rounded-lg shadow-xl border border-gray-100">
-        <!-- Header/Logo Section -->
-        <div class="text-center">
-            <h1 class="text-5xl sm:text-6xl font-extrabold text-navy tracking-tight">LVF</h1>
-            <p class="mt-2 text-xl sm:text-2xl text-silver font-light">Strategic Property Solutions</p>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">LVF</span>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn-secondary" id="investorLogin">Investor Login</button>
+                <button class="btn-primary" id="joinWaitlist">Join Waitlist</button>
+            </div>
         </div>
+    </nav>
 
-        <!-- Mission Statement -->
-        <div class="text-center mt-6">
-            <h2 class="text-3xl sm:text-4xl font-bold text-navy">Discreet. Bespoke. Transformative.</h2>
-            <p class="mt-4 text-lg sm:text-xl text-gray-700 leading-relaxed">
-                LVF is a discreet, licensed real estate brokerage and developer headquartered in Tokyo. We specialize in bespoke, high-value property solutions for discerning clients, financial institutions, and developers seeking strategic land investments.
-            </p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Curated Partnerships.<br>
+                    <span class="gradient-text">Unrivaled Dedication.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    A discreet, licensed real estate brokerage and developer headquartered in Tokyo, specializing in bespoke, high-value property solutions for discerning clients and financial institutions.
+                </p>
+                <div class="hero-highlight">
+                    <div class="highlight-icon">⚡</div>
+                    <p>We work exclusively with 2-3 clients at a time to ensure unparalleled focus and results.</p>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn-primary large" id="heroJoinWaitlist">Join Our Waitlist</button>
+                    <button class="btn-outline large" id="heroLearnMore">Learn More</button>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- Services Section -->
-        <div class="mt-10 text-center">
-            <h3 class="text-2xl sm:text-3xl font-semibold text-navy mb-6">Our Expertise Includes:</h3>
-            <ul class="space-y-3 text-lg sm:text-xl text-gray-700">
-                <li class="flex items-center justify-center">
-                    <span class="mr-2 text-silver">&#9679;</span> High-Value Property Brokerage
-                </li>
-                <li class="flex items-center justify-center">
-                    <span class="mr-2 text-silver">&#9679;</span> Strategic Development & Consulting
-                </li>
-                <li class="flex items-center justify-center">
-                    <span class="mr-2 text-silver">&#9679;</span> Comprehensive Property Management
-                </li>
-                <li class="flex items-center justify-center">
-                    <span class="mr-2 text-silver">&#9679;</span> Access to Elite Japanese Experts & Resources
-                </li>
-            </ul>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Comprehensive Real Estate Solutions</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Strategic Brokerage</h3>
+                    <p>High-value property acquisitions and strategic land investments for institutional clients.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏗️</div>
+                    <h3>Development & Consulting</h3>
+                    <p>End-to-end development solutions with award-winning architects and financial partners.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Property Management</h3>
+                    <p>Comprehensive management for international clients and secondary residences in Japan.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3>Holistic Partnerships</h3>
+                    <p>Connected network of lawyers, accountants, and financial institutions for complete solutions.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- Contact Information -->
-        <div class="mt-10 text-center border-t border-gray-200 pt-8">
-            <h3 class="text-2xl sm:text-3xl font-semibold text-navy mb-6">Connect With Us</h3>
-            <p class="text-lg sm:text-xl text-gray-700">
-                For inquiries, please reach out directly.
-            </p>
-            <p class="mt-4 text-xl sm:text-2xl font-medium text-navy">
-                Email: <a href="mailto:inquiries@lvf.com" class="text-blue-600 hover:underline">inquiries@lvf.com</a>
-            </p>
-            <p class="mt-2 text-xl sm:text-2xl font-medium text-navy">
-                Phone: <a href="tel:+81312345678" class="text-blue-600 hover:underline">+81 3 1234 5678</a>
-            </p>
-            <p class="mt-6 text-sm text-gray-500">
-                &copy; 2025 LVF. All rights reserved.
-            </p>
+    <!-- Partnership Section -->
+    <section class="partnership">
+        <div class="container">
+            <div class="partnership-content">
+                <div class="partnership-text">
+                    <h2>Ready to Partner?</h2>
+                    <p>We're expanding our network of exceptional professionals. Join leading real estate agents, financial institutions, and industry experts who choose LVF.</p>
+                    <div class="partnership-stats">
+                        <div class="stat">
+                            <span class="stat-number">150%</span>
+                            <span class="stat-label">Competitive Payout</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2-3</span>
+                            <span class="stat-label">Clients Maximum</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Quality Focus</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="partnership-positions">
+                    <h3>Open Positions</h3>
+                    <div class="position-list">
+                        <div class="position-item">
+                            <span class="position-title">Senior Real Estate Agent</span>
+                            <span class="position-type">Full-time</span>
+                        </div>
+                        <div class="position-item">
+                            <span class="position-title">AI Technology Specialist</span>
+                            <span class="position-type">Contract</span>
+                        </div>
+                        <div class="position-item">
+                            <span class="position-title">Development Consultant</span>
+                            <span class="position-type">Part-time</span>
+                        </div>
+                    </div>
+                    <button class="btn-outline" id="viewPositions">View All Positions</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Experience Unparalleled Service?</h2>
+                <p>Join our exclusive waitlist and discover why financial institutions and discerning clients choose LVF for their most important real estate decisions.</p>
+                <button class="btn-primary large" id="finalCTA">Join Waitlist</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">LVF</span>
+                    <p>Curated Partnerships. Unrivaled Dedication.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LVF. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Waitlist -->
+    <div class="modal" id="waitlistModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Join Our Exclusive Waitlist</h3>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <form class="waitlist-form" id="waitlistForm">
+                <div class="form-group">
+                    <label>What are you looking for?</label>
+                    <select name="interest" required>
+                        <option value="">Select your interest</option>
+                        <option value="land">Land Investment</option>
+                        <option value="apartment">Apartment/Residential</option>
+                        <option value="development">Development Projects</option>
+                        <option value="consulting">Consulting Services</option>
+                        <option value="management">Property Management</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Budget Range</label>
+                    <select name="budget" required>
+                        <option value="">Select budget range</option>
+                        <option value="under-100m">Under ¥100M</option>
+                        <option value="100m-500m">¥100M - ¥500M</option>
+                        <option value="500m-1b">¥500M - ¥1B</option>
+                        <option value="over-1b">Over ¥1B</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Area</label>
+                    <input type="text" name="area" placeholder="e.g., Tokyo, Osaka, etc." required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Contact Method</label>
+                    <select name="contact" required>
+                        <option value="">Select preference</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="meeting">In-person Meeting</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Submit Application</button>
+            </form>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
