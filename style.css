@@ -73,19 +73,17 @@ body {
     background: transparent;
     position: relative;
     letter-spacing: 0.02em;
+    display: inline-block;
 }
 
 .btn-primary {
     color: white;
     background: #1e1b4b;
-    border-bottom: 2px solid transparent;
 }
 
 .btn-primary:hover {
     background: #2563eb;
     color: white;
-    transform: none;
-    box-shadow: none;
 }
 
 .btn-secondary {
@@ -104,8 +102,9 @@ body {
 }
 
 .btn-outline:hover {
-    background: rgba(30, 27, 75, 0.05);
+    background: rgba(217, 119, 6, 0.1);
     border-color: #d97706;
+    color: #d97706;
 }
 
 .btn-primary.large, .btn-outline.large {
@@ -157,10 +156,26 @@ body {
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, #d97706, #b45309);
+    background: linear-gradient(135deg, #d97706, #f59e0b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: gradientShift 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+    0%, 100% { 
+        background: linear-gradient(135deg, #d97706, #f59e0b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    50% { 
+        background: linear-gradient(135deg, #f59e0b, #d97706);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
 }
 
 .hero-subtitle {
@@ -253,7 +268,13 @@ body {
 }
 
 .service-icon svg {
-    filter: drop-shadow(0 2px 4px rgba(37, 99, 235, 0.15));
+    filter: drop-shadow(0 2px 4px rgba(217, 119, 6, 0.15));
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon svg {
+    filter: drop-shadow(0 4px 8px rgba(217, 119, 6, 0.25));
+    transform: translateY(-2px);
 }
 
 .service-card h3 {
@@ -314,7 +335,7 @@ body {
 .stat-number {
     font-size: 28px;
     font-weight: 700;
-    color: #2563eb;
+    color: #d97706;
     margin-bottom: 6px;
 }
 
