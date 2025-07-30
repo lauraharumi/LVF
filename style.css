@@ -76,12 +76,13 @@ body {
 }
 
 .btn-primary {
-    color: #1e1b4b;
+    color: white;
+    background: #1e1b4b;
     border-bottom: 2px solid transparent;
 }
 
 .btn-primary:hover {
-    background: #1e1b4b;
+    background: #2563eb;
     color: white;
     transform: none;
     box-shadow: none;
@@ -89,22 +90,22 @@ body {
 
 .btn-secondary {
     color: #1e1b4b;
-    border-bottom: 1px solid rgba(30, 27, 75, 0.2);
+    border: 1px solid rgba(30, 27, 75, 0.3);
 }
 
 .btn-secondary:hover {
     background: rgba(30, 27, 75, 0.05);
-    border-bottom-color: #1e1b4b;
+    border-color: #1e1b4b;
 }
 
 .btn-outline {
     color: #1e1b4b;
-    border-bottom: 1px solid transparent;
+    border: 1px solid rgba(30, 27, 75, 0.3);
 }
 
 .btn-outline:hover {
     background: rgba(30, 27, 75, 0.05);
-    border-bottom-color: #d97706;
+    border-color: #d97706;
 }
 
 .btn-primary.large, .btn-outline.large {
@@ -361,10 +362,10 @@ body {
 }
 
 .position-title {
-    font-weight: 400;
-    color: #1a365d;
+    font-weight: 500;
+    color: #1e1b4b;
     font-size: 14px;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .position-type {
@@ -418,12 +419,12 @@ body {
 }
 
 .footer-contact h4 {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #1a365d;
+    font-weight: 600;
+    color: #1e1b4b;
     margin-bottom: 12px;
-    letter-spacing: 0.01em;
+    letter-spacing: -0.01em;
 }
 
 .footer-contact p {
@@ -434,13 +435,13 @@ body {
 }
 
 .footer-contact a {
-    color: #2563eb;
+    color: #d97706;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-contact a:hover {
-    color: #1d4ed8;
+    color: #b45309;
 }
 
 .footer-brand p {
@@ -476,7 +477,7 @@ body {
 }
 
 .social-link:hover {
-    color: #2563eb;
+    color: #d97706;
 }
 
 .footer-bottom {
@@ -573,9 +574,9 @@ body {
 
 .form-group label {
     font-size: 13px;
-    font-weight: 400;
-    color: #1a365d;
-    font-family: 'Times New Roman', serif;
+    font-weight: 500;
+    color: #1e1b4b;
+    font-family: 'Inter', sans-serif;
 }
 
 .form-group select,
@@ -584,17 +585,17 @@ body {
     border: 1px solid #e2e8f0;
     border-radius: 6px;
     padding: 10px 12px;
-    color: #1a365d;
+    color: #1e1b4b;
     font-size: 13px;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Inter', sans-serif;
     transition: all 0.3s ease;
 }
 
 .form-group select:focus,
 .form-group input:focus {
     outline: none;
-    border-color: #2563eb;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    border-color: #d97706;
+    box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.1);
 }
 
 .form-group select option {
