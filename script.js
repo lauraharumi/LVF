@@ -76,40 +76,19 @@ document.addEventListener('DOMContentLoaded', function() {
     // Form submission
     if (waitlistForm) {
         waitlistForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(waitlistForm);
-            const data = Object.fromEntries(formData);
-            
-            // Simulate form submission
+            // Let the form submit naturally to Formspree
+            // Just show loading state
             const submitButton = waitlistForm.querySelector('button[type="submit"]');
             const originalText = submitButton.textContent;
             
             submitButton.textContent = 'Submitting...';
             submitButton.disabled = true;
             
-            // Simulate API call delay
+            // Re-enable button after a delay in case of errors
             setTimeout(() => {
-                // In a real application, you would send this data to your backend
-                console.log('Waitlist submission:', data);
-                
-                // Show success message
-                submitButton.textContent = 'Application Submitted!';
-                submitButton.style.background = '#10b981';
-                
-                // Reset and close modal after delay
-                setTimeout(() => {
-                    closeModalFunc();
-                    submitButton.textContent = originalText;
-                    submitButton.disabled = false;
-                    submitButton.style.background = '';
-                    
-                    // Show success notification
-                    showNotification('Thank you! We\'ll be in touch soon.');
-                }, 2000);
-                
-            }, 1500);
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            }, 5000);
         });
     }
     
