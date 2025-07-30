@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (scrollTop > 50) {
             nav.style.background = 'rgba(255, 255, 255, 0.98)';
-            nav.style.borderBottom = '1px solid rgba(26, 54, 93, 0.15)';
+            nav.style.borderBottom = '1px solid rgba(30, 27, 75, 0.15)';
             nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.08)';
         } else {
             nav.style.background = 'rgba(255, 255, 255, 0.95)';
-            nav.style.borderBottom = '1px solid rgba(26, 54, 93, 0.1)';
+            nav.style.borderBottom = '1px solid rgba(30, 27, 75, 0.1)';
             nav.style.boxShadow = 'none';
         }
         
@@ -134,11 +134,11 @@ document.addEventListener('DOMContentLoaded', function() {
             position: 'fixed',
             top: '80px',
             right: '20px',
-            background: '#2563eb',
+            background: '#d97706',
             color: 'white',
             padding: '12px 20px',
             borderRadius: '6px',
-            boxShadow: '0 4px 20px rgba(37, 99, 235, 0.25)',
+            boxShadow: '0 4px 20px rgba(217, 119, 6, 0.25)',
             zIndex: '3000',
             fontSize: '13px',
             fontWeight: '500',
