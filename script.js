@@ -8,12 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
-        if (scrollTop > 100) {
-            nav.style.background = 'rgba(10, 10, 10, 0.98)';
-            nav.style.borderBottom = '1px solid rgba(255, 255, 255, 0.15)';
+        if (scrollTop > 50) {
+            nav.style.background = 'rgba(255, 255, 255, 0.98)';
+            nav.style.borderBottom = '1px solid rgba(26, 54, 93, 0.15)';
+            nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.08)';
         } else {
-            nav.style.background = 'rgba(10, 10, 10, 0.95)';
-            nav.style.borderBottom = '1px solid rgba(255, 255, 255, 0.1)';
+            nav.style.background = 'rgba(255, 255, 255, 0.95)';
+            nav.style.borderBottom = '1px solid rgba(26, 54, 93, 0.1)';
+            nav.style.boxShadow = 'none';
         }
         
         lastScrollTop = scrollTop;
@@ -94,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Show success message
                 submitButton.textContent = 'Application Submitted!';
-                submitButton.style.background = 'linear-gradient(135deg, #059669, #10b981)';
+                submitButton.style.background = '#10b981';
                 
                 // Reset and close modal after delay
                 setTimeout(() => {
@@ -151,20 +153,19 @@ document.addEventListener('DOMContentLoaded', function() {
         // Style notification
         Object.assign(notification.style, {
             position: 'fixed',
-            top: '100px',
+            top: '80px',
             right: '20px',
-            background: 'linear-gradient(135deg, #4f46e5, #7c3aed)',
+            background: '#2563eb',
             color: 'white',
-            padding: '16px 24px',
-            borderRadius: '8px',
-            boxShadow: '0 8px 32px rgba(79, 70, 229, 0.3)',
+            padding: '12px 20px',
+            borderRadius: '6px',
+            boxShadow: '0 4px 20px rgba(37, 99, 235, 0.25)',
             zIndex: '3000',
-            fontSize: '14px',
+            fontSize: '13px',
             fontWeight: '500',
-            maxWidth: '350px',
+            maxWidth: '320px',
             transform: 'translateX(100%)',
             transition: 'transform 0.3s ease',
-            backdropFilter: 'blur(10px)',
             border: '1px solid rgba(255, 255, 255, 0.1)'
         });
         
